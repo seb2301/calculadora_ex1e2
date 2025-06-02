@@ -1,0 +1,75 @@
+/* Reset e configurações globais */
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f1f1;
+  }
+  
+  /* Estrutura principal da calculadora */
+  .calculator {
+    width: 260px;
+    padding: 1rem;
+    background: #222;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Display */
+  #display {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 1rem;
+    padding: 0 0.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 2rem;
+    color: #0f0;
+    background: #000;
+    text-align: right;
+  }
+  
+  /* Grade de botões */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+  }
+  
+  button {
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.15s ease;
+  }
+  button:active {
+    opacity: 0.8;
+  }
+  
+  /* Categorias de botões */
+  .btn-number {
+    background: #333;
+    color: #fff;
+  }
+  .btn-operator {
+    background: #ff9500;
+    color: #fff;
+  }
+  .btn-action {
+    background: #757575;
+    color: #fff;
+  }
+  
+  /* Utilitários */
+  .span-2 {
+    grid-column: span 2;
+  }
+  
